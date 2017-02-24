@@ -3,11 +3,17 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: *For each unit of the sudoku we identify the naked twins by finding those boxes that have the same two-digit value in that unit. Then, we can iterate through the rest of (non-twin) boxes of the unit and remove the two locked digits. This way we use an additional constraint to solve the puzzle more quickly.*
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: *In a normal sudoku we have row units, column units, and square units. In a diagonal sudoku we have two additional units: the "diagonal units"*
+
+```
+diag_units = [['A1', 'B2', 'C3', 'D4', 'E5', 'F6', 'G7', 'H8', 'I9'], 
+['A9', 'B8', 'C7', 'D6', 'E5', 'F4', 'G3', 'H2', 'I1']]
+```
+Once we define them and add them to the full unit list, all other functions that iterate through units will automatically do so through the additional diagonal units.
 
 ### Install
 
