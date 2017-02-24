@@ -1,6 +1,8 @@
 # Artificial Intelligence Nanodegree
 ## Introductory Project: Diagonal Sudoku Solver
 
+Name: Dario Arcos-Diaz
+
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: *For each unit of the sudoku we identify the naked twins by finding those boxes that have the same two-digit value in that unit. Then, we can iterate through the rest of (non-twin) boxes of the unit and remove the two locked digits. This way we use an additional constraint to solve the puzzle more quickly.*
